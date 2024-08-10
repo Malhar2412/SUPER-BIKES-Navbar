@@ -1,0 +1,29 @@
+class Account: 
+     
+    print("WELCOME TO STATE BANK OF INDIA") 
+     
+     
+    def __init__(self,acc_name,acc_no,acc_pass,acc_bal): 
+        self.acc_name=acc_name 
+        self.acc_no=acc_no 
+        self.acc_pass=acc_pass 
+        self.acc_bal=acc_bal 
+         
+c1=Account("Kumar Avchar",'555500','0327','10000') 
+print("WELCOME",c1.acc_name)     
+ 
+p=input("enter the pass:- ") 
+if p == c1.acc_pass: 
+ print("THE ACCOUNT NO IS= ",c1.acc_no,"ACCOUNT BAL IS = ",c1.acc_bal) 
+ print("WHAT WOULD YOU'LL LIKE TO DO : \n","1.DEBIT AMMOUNT: \n","2.CREDIT AMMOUNT:") 
+ 
+else: 
+    print("INVALID PASSWORD")  
+ 
+d="debit" 
+c="credit" 
+ 
+if d == "1": 
+    inp=input("enter the ammount you want to debit:- ") 
+    bal_after_debit=inp-c1.acc_bal 
+    total_bal=bal_after_debit

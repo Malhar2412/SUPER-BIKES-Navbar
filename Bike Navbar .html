@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superbikes Showcase</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* Background Animation */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-20deg,
+#505050,
+#585858,
+#606060,	
+#686868,	
+#696969,	
+#707070,	
+#787878,	
+#808080,	
+#888888,	
+#909090,	
+#989898,	
+#A0A0A0,	
+#A8A8A8,	
+#A9A9A9	);
+      background-size: 400% 400%;
+      animation: gradientAnimation 08s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    .carousel-inner img {
+      width: 80%; /* Adjust this value to set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin: auto; /* Center the image horizontally */
+       /* Make sure the image is block-level for centering */
+    }
+    .carousel {
+      text-align: center; /* Center the carousel container */
+    }
+     /* Apply different font styles */
+     h2, .card-title {
+      font-weight: 700; /* Bold for headings and titles */
+    }
+    
+    p, .card-text {
+      font-weight: 400; /* Normal weight for paragraphs and card text */
+    }
+
+    .class{
+      font-family: 'Times New Roman'; /* Ensure buttons use the same font */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SUPER BIKES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://wallpapers.com/images/hd/superbike-pictures-mz7w5nib5lpm7p3p.jpg" class="d-block w-100" alt="Superbike1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpapers.com/images/hd/superbike-pictures-mz7w5nib5lpm7p3p.jpg" class="d-block w-100" alt="Superbike2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.autotrader.ca/editorial/media/128342/2017-superbikes-comparison-01-db.jpg?rxy=0.58006042296072513,0.57013574660633481&width=1920&height=1080&v=1d3174b2ffef360" class="d-block w-100" alt="Superbike3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Information Section -->
+  <div class="container mt-5">
+    <div class="section-title mb-4">
+      <h2>World's Most Powerful Superbikes</h2>
+      <p>Explore our top picks for the best superbikes in the market.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://www.kawasaki.eu/content/dam/products/pim/studio/nin/Resource_299074_24MY_Ninja_H2R_GY3_STU.jpg/jcr:content/renditions/cq5dam.web.1280.1280.png" class="card-img-top" alt="Superbike 2">
+          <div class="card-body">
+            <h5 class="card-title">Kawasaki Ninja H2R - 326 horsepower</h5>
+            <p class="card-text">The true king of superbikes is not a street-legal motorcycle.It has a 988cc liquid-cooled DOHC supercharged four-cylinder engine that can go 0-60 in 2.93 seconds and 0-100 in just 5.12 seconds. This makes it the fastest production motorcycle on the market.</p>
+            <a href="#" class="btn btn-primary">Starting MSRP: $57,500</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/151501/panigale-v4-r-right-front-three-quarter.png?isig=0" class="card-img-top" alt="Superbike 2">
+          <div class="card-body">
+            <h5 class="card-title">Ducati Panigale V4 R - 240.5 horsepower</h5>
+            <p class="card-text">Aprilia may be an exciting Italian brand, but let's face it, it's really hard to compete with Ducati when they're firing on all four cylinders. Which brings us to the Panigale V4 R, a sophisticated work of art that also happens to be a high-speed machine.</p>
+            <a href="#" class="btn btn-primary">Starting MSRP: $44,995</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/44742/ducati-panigale-v4-r-right-side1.jpeg" class="card-img-top" alt="Superbike 3">
+          <div class="card-body">
+            <h5 class="card-title">Ducati Superleggera V4 - 234 horsepower</h5>
+            <p class="card-text">Ducati doesn't seem to know how to make a slow motorcycle. It's not in their DNA. Everything they make cranks it up to 11. And so is the case with this extremely exclusive Superleggera V4. Only 500 of them were ever produced, and each came with a certificate of authenticity.</p>
+            <a href="#" class="btn btn-primary">Starting MSRP: $100,000</a>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://bd.gaadicdn.com/processedimages/kawasaki/kawasaki-ninja-h2/source/kawasaki-ninja-h261a5ba0c80984.jpg" class="card-img-top" alt="Superbike 4">
+          <div class="card-body">
+            <h5 class="card-title">Kawasaki Ninja H2/H2 Carbon - 228 horsepower</h5>
+            <p class="card-text">Did we mention that Kawasaki has a lot of Ninjas in their stable? Carrying on the torch for the ZX-14 is the Kawasaki Ninja H2 and H2 Carbon as the flagship fastest bike in the world. Kawasaki makes each bike to order and requires a hefty deposit to ensure you have the right level of commitment.</p>
+            <a href="#" class="btn btn-primary">Starting MSRP: $30,500/$34,000</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/aprilia-select-model-ultra-gold-1713330908540.png?q=80" class="card-img-top" alt="Superbike 5">
+          <div class="card-body">
+            <h5 class="card-title">Aprilia RSV4 1100 Factory - 217 horsepower</h5>
+            <p class="card-text">In case you weren't aware, but Ducati isn't the only Italian motorcycle manufacturer. They may get most of the mainstream attention, but true superbike enthusiasts know that Aprilia is one to pay attention to. </p>
+            <a href="#" class="btn btn-primary">Starting MSRP: $25,999</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://www.motorcyclistonline.com/resizer/rkcbeOtHUebzoO8aVpOfh1Ro-5E=/arc-photo-octane/arc3-prod/public/V4E4YNYLJRC6ZLECAGPA5GJHIQ.jpg" class="card-img-top" alt="Superbike 5">
+          <div class="card-body">
+            <h5 class="card-title">Honda CBR 1000RR-R Fireblade SP - 215 horsepower</h5>
+            <p class="card-text">If you want a bike that embodies MotoGP technology but is also street-legal, then take a closer look at the Honda CBR 1000RR-R Fireblade SP. Its status, ever since its inception back in the early 90s, is legendary, to say the least.</p>
+            <a href="#" class="btn btn-primary">Starting MSRP: $28,500</a>
+            
